@@ -1,0 +1,48 @@
+.innersec2 {
+  flex-direction: row;
+}
+
+.innersec2 .divs {
+  width: 22rem;
+  height: 27.945rem;
+}
+
+.write ul {
+  margin-bottom: -5.5rem;
+}
+
+.inputs {
+  flex-direction: row;
+  height: 60%;
+
+  justify-content: space-between;
+
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+form input,
+form select {
+  width: 45%;
+}
+
+.galleryCont {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.galleryCont .top,
+.galleryCont .bottom {
+  flex-direction: row;
+}
+.top .gallery {
+  width: 22rem;
+  height: 22rem;
+}
+.bottom .gallery {
+  width: 22rem;
+  height: 13.75rem;
+}

@@ -1,0 +1,71 @@
+nav {
+  background: transparent;
+}
+.innerNav {
+  justify-content: space-between;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav ul li,
+nav ul a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+  font-size: 1.6rem;
+  font-family: var(--fjalla);
+}
+.white {
+  display: flex;
+}
+
+.ham,
+.dark {
+  display: none;
+}
+
+header .content h1 {
+  font-size: 5rem;
+}
+
+header .content p {
+  font-size: 1.8rem;
+  color: var(--white);
+  font-family: var(--fjalla);
+}
+
+.innerMain .div2 {
+  width: 61.1rem;
+}
+
+.write h5 {
+  font-size: 3.8rem;
+}
+
+.write li,
+.write a {
+  font-family: 2.4rem;
+}
+
+.innersec2 .divs {
+  width: 29.33rem;
+  height: 37.259rem;
+}
+.write {
+  gap: 0.1rem;
+}
+.write ul {
+  margin-bottom: -5.3rem;
+}
+/* .write .two ul {
+  margin-bottom: -10rem;
+} */
+
+.foodsCont {
+  /* width: 59.6rem; */
+  width: 70rem;
+}
+

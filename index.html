@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -15,6 +15,9 @@
     />
 
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./size640.css" media="(min-width:640px)" />
+    <link rel="stylesheet" href="./size768.css" media="(min-width:768px)" />
+    <link rel="stylesheet" href="./size1024.css" media="(min-width:1024px)" />
     <title>Cilantro Resturants in Nigeria</title>
   </head>
   <body>
@@ -25,8 +28,14 @@
             <i class="fa fa-bars"></i>
           </div>
           <div class="logocont">
-            <img src="./img/logo_dark.png" alt="" />
+            <img class="dark" src="./img/logo_dark.png" alt="" />
+            <img class="white" src="./img/logo.png" alt="" />
           </div>
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">RESERVATION</a></li>
+            <li><a href="#">RESTURANTS</a></li>
+          </ul>
         </div>
       </nav>
 
@@ -73,7 +82,7 @@
 
     <section class="sec1">
       <div class="overlay2"></div>
-      <h1>WE CREATE DELICOUS MEMORIES Cilantro</h1>
+      <h1>WE CREATE DELICOUS MEMORIES</h1>
       <button>RESERVATION</button>
     </section>
 
@@ -131,38 +140,39 @@
         </div>
 
         <form action="">
-          <select name="" id="">
-            <option value="">PREFFERD CITY*</option>
-            <option value="">CILANTRO KANO</option>
-            <option value="">CILANTRO ABUJA</option>
-            <option value="">CILANTRO LAGOS</option>
-          </select>
+          <div class="inputs">
+            <select name="" id="">
+              <option value="">PREFFERD CITY*</option>
+              <option value="">CILANTRO KANO</option>
+              <option value="">CILANTRO ABUJA</option>
+              <option value="">CILANTRO LAGOS</option>
+            </select>
 
-          <select name="" id="">
-            <option value="">CHOOSE HOTEL*</option>
-          </select>
+            <select name="" id="">
+              <option value="">CHOOSE HOTEL*</option>
+            </select>
 
-          <select name="occasion" id="">
-            <option value="">OCCASION*</option>
-            <option value="">BIRTHDAY</option>
-            <option value="">ANNIVERSARY</option>
-            <option value="">LEISURE</option>
-            <option value="">SPECIAL OCCASION</option>
-            <option value="">OTHER</option>
-          </select>
+            <select name="occasion" id="">
+              <option value="">OCCASION*</option>
+              <option value="">BIRTHDAY</option>
+              <option value="">ANNIVERSARY</option>
+              <option value="">LEISURE</option>
+              <option value="">SPECIAL OCCASION</option>
+              <option value="">OTHER</option>
+            </select>
 
-          <select name="occasion" id="">
-            <option value="">CHOOSE HOTEL*</option>
-          </select>
+            <!-- <select name="occasion" id="">
+              <option value="">CHOOSE HOTEL*</option>
+            </select> -->
 
-          <input type="text" placeholder="NUMBER OF PEOPLE*" />
+            <input type="text" placeholder="NUMBER OF PEOPLE*" />
 
-          <input type="text" placeholder="YOUR NAME" />
+            <input type="text" placeholder="YOUR NAME" />
 
-          <input type="email" placeholder="EMAIL" />
-          <input type="number" placeholder="PHONE NO*" />
-          <input type="date" placeholder="DATE" />
-
+            <input type="email" placeholder="EMAIL" />
+            <input type="number" placeholder="PHONE NO*" />
+            <input type="date" placeholder="DATE" />
+          </div>
           <textarea name="" placeholder="MESSAGE" id=""></textarea>
 
           <button>BOOK YOUR TABLE</button>
@@ -176,50 +186,60 @@
           <img class="fav" src="./img/fav-icon.png" alt="" />
           <h1>OUR FOODS</h1>
         </div>
-
-        <div class="div1">
-          <div class="overlay1">
-            <h2>chicken</h2>
+        <div class="foodsCont">
+          <div class="div1">
+            <img src="./img/Mocktails.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div2">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div2">
+            <img src="./img/Chicken-Pesto-Pasta.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div3">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div3">
+            <img src="./img/Chicken-and-Mushroom.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div4">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div4">
+            <img src="./img/Lamb-Kafta.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div5">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div5">
+            <img src="./img/Chicken-65.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div6">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div6">
+            <img src="./img/Butter-Chicken-Pizza.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div7">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div7">
+            <img src="./img/Chicken-Biriyani.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div8">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div8">
+            <img src="./img/Grilled-salmon.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
-        </div>
-        <div class="div9">
-          <div class="overlay1">
-            <h2>chicken</h2>
+          <div class="div9">
+            <img src="./img/Cocktails.webp" alt="" />
+            <div class="overlay1">
+              <h2>chicken</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -238,23 +258,27 @@
           </div>
         </div>
         <div class="galleryCont">
-          <div class="gallery">
-            <img src="./img/gallery1.jpg" alt="" />
+          <div class="top">
+            <div class="gallery">
+              <img src="./img/gallery1.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./img/gallery2.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./img/gallery3.jpg" alt="" />
+            </div>
           </div>
-          <div class="gallery">
-            <img src="./img/gallery2.jpg" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="./img/gallery3.jpg" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="./img/gallery6.jpg" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="./img/gallery8.jpg" alt="" />
-          </div>
-          <div class="gallery">
-            <img src="./img/gallery9.jpg" alt="" />
+          <div class="bottom">
+            <div class="gallery">
+              <img src="./img/gallery6.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./img/gallery8.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./img/gallery9.jpg" alt="" />
+            </div>
           </div>
         </div>
       </div>

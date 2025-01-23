@@ -11,6 +11,9 @@
   --lightblack: #515151;
   --bgblack: #101010;
   --iconbg: #3f3f3f;
+  --courgette: "Courgette", serif;
+  --fjalla: "Fjalla One", serif;
+  --OpenSans: "Open Sans", serif;
 
   --overlay: rgba(0, 0, 0, 0.527);
 }
@@ -74,9 +77,11 @@ nav .logocont img {
   height: 100%;
 }
 
-
 nav .ham i {
   font-size: 2.4rem;
+}
+.white {
+  display: none;
 }
 header img {
   width: 4rem;
@@ -97,14 +102,17 @@ header .content {
 header .content h1 {
   font-size: 6rem;
   color: var(--white);
+  font-family: var(--fjalla);
 }
 
 header .state {
   color: var(--green) !important;
 }
 header .content p {
-  font-size: 2.2rem;
+  font-size: 1.4rem;
   color: var(--white);
+
+  font-family: var(--OpenSans);
   /* line-height: 4rem; */
 }
 
@@ -116,6 +124,7 @@ header .content button {
   width: 15.592rem;
   height: 4rem;
   border-radius: 1.2rem;
+  font-family: var(--OpenSans);
 }
 
 .headeroverlay {
@@ -144,17 +153,18 @@ main {
   padding: 10rem 0;
 }
 .innerMain .div1 {
-  width: 100%;
+  width: 40rem;
   height: 47rem;
   border-radius: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  /* width: 100vw; */
 }
 .innerMain .div1 img {
-  width: 70%;
+  width: 100%;
   height: 100%;
+  border-radius: 0.5rem;
   border-radius: 0.5rem;
 }
 
@@ -164,6 +174,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  width: 80%;
 }
 
 .fav {
@@ -173,6 +184,7 @@ main {
 .innerMain .div2 h1 {
   font-size: 4.8rem;
   text-align: center;
+  font-family: var(--fjalla);
 }
 
 .innerMain .span {
@@ -190,11 +202,13 @@ main {
   font-size: 1.4rem;
   text-align: center;
   color: var(--green);
+  font-family: var(--courgette);
 }
 .innerMain .div2 p {
   font-size: 1.6rem;
   text-align: center;
   color: var(--lightblack);
+  font-family: var(--OpenSans);
 
   line-height: 2.8rem;
 }
@@ -212,6 +226,7 @@ main {
   background-repeat: no-repeat;
   position: relative;
   margin-top: 10rem;
+  gap: 5rem;
 }
 .overlay2 {
   position: absolute;
@@ -225,6 +240,8 @@ main {
   text-align: center;
   color: var(--white);
   z-index: 1;
+  font-family: var(--fjalla);
+  font-weight: 100;
 }
 .sec1 button {
   font-size: 1.3rem;
@@ -235,6 +252,7 @@ main {
   height: 4rem;
   width: 13.83rem;
   z-index: 1;
+  font-family: var(--OpenSans);
 }
 
 .sec2 {
@@ -296,9 +314,11 @@ main {
 .write h5 {
   font-size: 2rem;
   color: var(--green);
+  font-family: var(--fjalla);
 }
 .write span {
   color: var(--white);
+  font-family: var(--fjalla);
 }
 
 .write ul {
@@ -314,6 +334,8 @@ main {
   list-style: none;
   text-decoration: none;
   color: var(--white);
+  font-family: var(--courgette);
+  font-size: 1.4rem;
 }
 
 .sec3 {
@@ -353,6 +375,7 @@ main {
   font-size: 4.8rem;
   text-align: center;
   color: var(--white);
+  font-family: var(--fjalla);
 }
 
 .innersec3 .span {
@@ -361,6 +384,7 @@ main {
   align-items: end;
   gap: 1rem;
   color: var(--green);
+  font-family: var(--courgette);
 }
 .innersec3 .top span {
   width: 3rem;
@@ -368,6 +392,14 @@ main {
   border-bottom: 2px solid var(--green);
 }
 form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.inputs {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -413,9 +445,11 @@ textarea::placeholder {
   height: 4rem;
   width: 17.02rem;
   z-index: 1;
+  font-family: var(--OpenSans);
 }
 .sec4 {
   width: 100vw;
+  height: 431.181rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -436,6 +470,7 @@ textarea::placeholder {
   font-size: 4.8rem;
   text-align: center;
   color: var(--bgblack);
+  font-family: var(--fjalla);
 }
 
 .innersec4 {
@@ -445,7 +480,8 @@ textarea::placeholder {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* padding: 0 1.6rem; */
 }
 .overlay1 {
   width: 100%;
@@ -456,8 +492,19 @@ textarea::placeholder {
   align-items: center;
   position: absolute;
   top: 100%;
+  color: var(--white);
+  font-size: 2rem;
+  font-family: var(--fjalla);
 }
-.sec4 .div1 {
+.foodsCont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+/* .sec4 .div1 {
   background-image: url(./img/Mocktails.webp);
 }
 .sec4 .div2 {
@@ -484,7 +531,7 @@ textarea::placeholder {
 }
 .sec4 .div9 {
   background-image: url(./img/Cocktails.webp);
-}
+} */
 .sec4 .div1,
 .sec4 .div2,
 .sec4 .div3,
@@ -503,6 +550,19 @@ textarea::placeholder {
   position: relative;
   overflow-y: hidden;
 }
+.sec4 .div1 img,
+.sec4 .div2 img,
+.sec4 .div3 img,
+.sec4 .div4 img,
+.sec4 .div5 img,
+.sec4 .div6 img,
+.sec4 .div7 img,
+.sec4 .div8 img,
+.sec4 .div9 img {
+  width: 100%;
+  height: 100%;
+}
+
 .sec4 .div1:hover .overlay1,
 .sec4 .div2:hover .overlay1,
 .sec4 .div3:hover .overlay1,
@@ -546,6 +606,7 @@ article {
   font-size: 4.8rem;
   text-align: center;
   color: var(--bgblack);
+  font-family: var(--fjalla);
 }
 
 .innerart .span {
@@ -554,11 +615,22 @@ article {
   align-items: end;
   gap: 1rem;
   color: var(--green);
+  font-family: var(--courgette);
+  font-size: 1.6rem;
 }
 .innerart .top span {
   width: 3rem;
   height: 1.5rem;
   border-bottom: 2px solid var(--green);
+}
+.galleryCont .top,
+.galleryCont .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 }
 .galleryCont {
   width: 100%;
@@ -575,6 +647,7 @@ article {
 .gallery img {
   width: 100%;
   height: 100%;
+  border-radius: 0.5rem;
 }
 
 footer {
@@ -594,4 +667,5 @@ footer {
 footer p {
   color: var(--lightblack);
   font-size: 1.5rem;
+  font-family: var(--OpenSans);
 }
