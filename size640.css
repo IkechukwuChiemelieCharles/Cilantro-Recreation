@@ -3,21 +3,22 @@ nav {
 
 .sec4 {
   width: 100vw;
-  height: 155.609rem;
+  /* height: 155.609rem; */
 }
 
 .innersec4 {
-  height: 155.609rem;
+  /* height: 155.609rem; */
 }
 
 .foodsCont {
-  /* width: 59.6rem; */
-  width: 90%;
+  width: 100%;
 
-  justify-content: start;
-  gap: 0.5rem;
-  height: 155.609rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid red;
 }
 
 .sec4 .div1,
@@ -29,18 +30,14 @@ nav {
 .sec4 .div7,
 .sec4 .div8,
 .sec4 .div9 {
-  width: 50%;
-  height: 28.703rem;
-}
-
-.sec4 .div1 {
-  height: 23%;
+  /* width: 50%; */
+  height: 40.703rem;
 }
 
 /* .sec4 .div5 {
   height: 33.9rem;
 } */
 .gallery {
-    width: 100%;
-    height: 60.5rem;
-  }
+  width: 100%;
+  height: 60.5rem;
+}

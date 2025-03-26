@@ -1,0 +1,16 @@
+.foodsCont {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.sec4 .div1,
+.sec4 .div2,
+.sec4 .div3,
+.sec4 .div4,
+.sec4 .div5,
+.sec4 .div6,
+.sec4 .div7,
+.sec4 .div8,
+.sec4 .div9 {
+  max-width: 36rem;
+}

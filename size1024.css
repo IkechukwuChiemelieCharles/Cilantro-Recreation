@@ -1,3 +1,4 @@
+
 nav {
   background: transparent;
 }
@@ -37,8 +38,13 @@ header .content p {
   font-family: var(--fjalla);
 }
 
-.innerMain .div2 {
-  width: 61.1rem;
+.innerMain {
+  flex-direction: row;
+}
+.innerMain .div2,
+.innerMain .div1 {
+  width: 50%;
+  max-width: 39rem;
 }
 
 .write h5 {
@@ -68,4 +74,10 @@ header .content p {
   /* width: 59.6rem; */
   width: 70rem;
 }
+.inputs {
+ 
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
 
+  gap: 2rem;
+}

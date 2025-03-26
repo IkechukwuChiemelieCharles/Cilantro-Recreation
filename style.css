@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 :root {
@@ -20,6 +21,7 @@
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -42,6 +44,7 @@ header {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   width: 100vw;
   height: 90rem;
   position: relative;
@@ -80,6 +83,10 @@ nav .logocont img {
 nav .ham i {
   font-size: 2.4rem;
 }
+
+nav ul {
+  display: none;
+}
 .white {
   display: none;
 }
@@ -100,7 +107,7 @@ header .content {
 }
 
 header .content h1 {
-  font-size: 6rem;
+  font-size: 5rem;
   color: var(--white);
   font-family: var(--fjalla);
 }
@@ -141,6 +148,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 100vw;
+  max-width: 117rem;
   /* height: 135.85rem; */
 }
 .innerMain {
@@ -182,7 +190,7 @@ main {
   height: 3.1rem;
 }
 .innerMain .div2 h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
   font-family: var(--fjalla);
 }
@@ -224,6 +232,7 @@ main {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   position: relative;
   margin-top: 10rem;
   gap: 5rem;
@@ -236,7 +245,7 @@ main {
   background-color: var(--overlay);
 }
 .sec1 h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
   color: var(--white);
   z-index: 1;
@@ -270,6 +279,7 @@ main {
   flex-direction: column;
   width: 90%;
   gap: 4rem;
+  max-width: 117rem;
 }
 .innersec2 .divs {
   width: 37rem;
@@ -347,6 +357,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   padding: 5rem 0;
   position: relative;
   margin-top: 10rem;
@@ -358,6 +369,8 @@ main {
   flex-direction: column;
   gap: 2rem;
   width: 90%;
+  max-width: 117rem;
+
   z-index: 2;
 }
 .innersec3 .top {
@@ -372,7 +385,7 @@ main {
   height: 3.1rem;
 }
 .innersec3 .top h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
   color: var(--white);
   font-family: var(--fjalla);
@@ -400,11 +413,14 @@ form {
   gap: 2rem;
 }
 .inputs {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+
   gap: 2rem;
 }
 
@@ -449,7 +465,7 @@ textarea::placeholder {
 }
 .sec4 {
   width: 100vw;
-  height: 431.181rem;
+  /* height: 431.181rem; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -467,7 +483,7 @@ textarea::placeholder {
   height: 3.1rem;
 }
 .innersec4 .top h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
   color: var(--bgblack);
   font-family: var(--fjalla);
@@ -475,6 +491,8 @@ textarea::placeholder {
 
 .innersec4 {
   width: 90%;
+  max-width: 117rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -498,10 +516,16 @@ textarea::placeholder {
 }
 .foodsCont {
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
   gap: 2rem;
 }
 /* .sec4 .div1 {
@@ -542,10 +566,11 @@ textarea::placeholder {
 .sec4 .div8,
 .sec4 .div9 {
   width: 100%;
+  max-width: 60rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 44.48rem;
+  height: 52.431rem;
   border-radius: 1.5rem;
   position: relative;
   overflow-y: hidden;
@@ -603,7 +628,7 @@ article {
   height: 3.1rem;
 }
 .innerart .top h1 {
-  font-size: 4.8rem;
+  font-size: 4rem;
   text-align: center;
   color: var(--bgblack);
   font-family: var(--fjalla);
