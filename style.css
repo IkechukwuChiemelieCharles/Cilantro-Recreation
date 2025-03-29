@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 :root {
@@ -161,7 +161,7 @@ main {
   padding: 10rem 0;
 }
 .innerMain .div1 {
-  width: 40rem;
+  width: 30rem;
   height: 47rem;
   border-radius: 0.5rem;
   display: flex;
@@ -282,7 +282,7 @@ main {
   max-width: 117rem;
 }
 .innersec2 .divs {
-  width: 37rem;
+  width: 30rem;
   height: 47rem;
   position: relative;
   border-radius: 1.5rem;
